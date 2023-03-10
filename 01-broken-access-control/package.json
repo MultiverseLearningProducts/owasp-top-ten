@@ -1,0 +1,28 @@
+{
+	"name": "01-broken-access-control",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon index.js",
+		"csrf": "serve -p 3001 csrf",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cookie-parser": "^1.4.6",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"express-session": "^1.17.3",
+		"nunjucks": "^3.2.3",
+		"sequelize": "^6.29.1",
+		"sqlite3": "^5.1.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.21",
+		"serve": "^14.2.0"
+	}
+}
