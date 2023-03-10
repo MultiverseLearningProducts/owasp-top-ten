@@ -1,0 +1,17 @@
+{
+	"name": "02-cryptographic-failures",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"seed": "node seed.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"sequelize": "^6.29.1",
+		"sqlite3": "^5.1.4"
+	}
+}
