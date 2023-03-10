@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Messages</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Messages</h1>
+
+	<form action="/create" method="POST">
+		<p>
+			<label for="value">Value</label>
+			<input type="text" name="value" id="value" required>
+		</p>
+		<p>
+			<button type="submit">Submit</button>
+		</p>
+	</form>
+
+	{% if messages | length %}
+		<table>
+			<thead>
+				<tr>
+					<th>id</th>
+					<th>value</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for message in messages %}
+					<tr>
+						<td>{{ message.id }}</td>
+						<td>{{ message.value }}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	{% else %}
+		<p>No messages yet&hellip;</p>
+	{% endif %}
+</body>
+</html>
